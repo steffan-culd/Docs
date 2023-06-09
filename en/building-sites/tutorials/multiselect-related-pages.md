@@ -28,11 +28,11 @@ You probably don't have a snippet called listMyResources yet, so let's create it
 
 ## Creating the snippet
 
-We will need to create a snippet that lists the appropriate resources, and in such a way that it makes sense to the TV input type. The Listbox will be expecting a string like the following:
+We will need to create a snippet that lists the appropriate resources, and in such a way that it makes sense to the TV input type. The Listbox will be expecting a string like the following: (label==value)
 
-> value1==name||value2==name2||lasteone==Last name?
+> name==value1||name2==value2||Last name?==lasteone
 
-The above consists of three key-value pairs, seperated by two pipes. The key and value are separated by two equal characters. So this is what we want the snippet to output as well.
+The above consists of three key-value pairs, seperated by two pipes. The key and value are separated by two equal characters. So this is what we want the snippet to output as well. 
 
 Create a new snippet and name it listMyResources or whatever you put in the input options of the template variable. Let's start of by assigning the property expected (parent) to a variable.
 
